@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Clock</title>
+  <link rel="stylesheet" href="./src/css/output.css">
+  <link rel="stylesheet" href="./src/css/input.css">
+</head>
+
+<body class="bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] min-h-screen flex items-center justify-center text-white font-sans p-6">
+
+  <!-- CLOCK CONTAINER -->
+  <div class="backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl p-8 md:p-14 rounded-3xl text-center flex flex-col gap-8 max-w-4xl w-full transition-all duration-500">
+
+    <!-- TIME DISPLAY -->
+    <div>
+      <h1 id="time" class="text-5xl md:text-[150px] text-yellow-400 font-mono glow transition-all duration-300">00:00:00</h1>
+    </div>
+
+    <!-- DATE DISPLAY -->
+    <div class="flex flex-wrap justify-center gap-6 text-xl md:text-3xl text-white/90 font-semibold">
+      <span id="date" class="px-4 py-2 bg-white/5 rounded-xl border border-white/20">DD</span>
+      <span id="month" class="px-4 py-2 bg-white/5 rounded-xl border border-white/20">MM</span>
+      <span id="year" class="px-4 py-2 bg-white/5 rounded-xl border border-white/20">YYYY</span>
+    </div>
+
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="./src/js/script.js"></script>
+
+</body>
+
+</html>
